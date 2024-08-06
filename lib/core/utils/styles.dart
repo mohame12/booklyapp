@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 abstract  class TextStyles
 {
@@ -23,4 +22,8 @@ abstract  class TextStyles
       fontWeight: FontWeight.normal
   );
 
+  static const textStyle30=TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.bold
+  );
 }

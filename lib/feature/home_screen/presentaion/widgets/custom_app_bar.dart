@@ -1,3 +1,4 @@
+import 'package:booklyapp1/feature/search_screen/presentaion/views/search_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -17,7 +18,9 @@ class CustomAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SvgPicture.asset(AssetsData.logo,height: 20,),
-          IconButton(onPressed: (){}, icon:const Icon(FontAwesomeIcons.magnifyingGlass),iconSize: 22,color: Colors.white,)
+          IconButton(onPressed: (){
+            Navigator.pushNamed(context, SearchView.id);
+          }, icon:const Icon(FontAwesomeIcons.magnifyingGlass),iconSize: 22,color: Colors.white,)
         ],
       ),
     );
